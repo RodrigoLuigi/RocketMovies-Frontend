@@ -85,12 +85,12 @@ export const Profile = styled.div`
   }
 
   > a {
-    width: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
-    height: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
+    width: clamp(3.2rem, 3.2rem + 5vw , 6.4rem);
+    height: clamp(3.2rem, 3.2rem + 5vw , 6.4rem);
 
     img {
-      width: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
-      height: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
+      width: clamp(3.2rem, 3.2rem + 5vw , 6.4rem);
+      height: clamp(3.2rem, 3.2rem + 5vw , 6.4rem);
       object-fit: cover;
 
       border-radius: 50%;
