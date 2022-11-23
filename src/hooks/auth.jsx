@@ -6,10 +6,12 @@ export const AuthContext = createContext({});
 
 function AuthProvider({ children }) {
   const [data, setData] = useState({});
+  const [loading, setLoading] = useState(false);
   
   async function signIn({email, password}) {
     
     try {
+      setLoading(true);
       const response = await api.post("/sessions", { email, password });
       const { token , user } = response.data;
       
@@ -22,23 +24,27 @@ function AuthProvider({ children }) {
 
     } catch (error) {
       if(error.response){
-        alert(error.response.data.message)
+        alert(error.response.data.message);
+        setLoading(false);
       } else {
         alert("Não foi possível entrar.")
-      }
+        setLoading(false);
+      } 
+    } finally {
+      setLoading(false);
     }
-    
   }
 
   function signOut(){
     localStorage.removeItem("@rocketmovies:token");
     localStorage.removeItem("@rocketmovies:user");
     setData({});
+    setLoading(false);
   }
 
   async function updateProfile({ user , avatarFile}){
     try {
-
+      setLoading(true);
       if(avatarFile){
         const fileUploadForm = new FormData();
         fileUploadForm.append("avatar", avatarFile);
@@ -57,10 +63,14 @@ function AuthProvider({ children }) {
 
     } catch (error) {
       if(error.response){
-        alert(error.response.data.message)
+        alert(error.response.data.message);
+        setLoading(false);
       } else {
-        alert("Não foi possível atualizar o perfil.")
+        alert("Não foi possível atualizar o perfil.");
+        setLoading(false);
       }
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -81,6 +91,8 @@ function AuthProvider({ children }) {
     <AuthContext.Provider value={{ 
       signIn, 
       signOut,
+      loading,
+      setLoading,
       updateProfile,
       user: data.user
       }}>

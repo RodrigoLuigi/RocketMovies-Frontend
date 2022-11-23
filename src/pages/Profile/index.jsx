@@ -14,7 +14,7 @@ import { ButtonText } from '../../components/ButtonText';
 import { Container, Form, Avatar } from './styles';
 
 export function Profile(){
-  const { user, updateProfile } = useAuth();
+  const { user, updateProfile, loading, setLoading } = useAuth();
 
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
@@ -105,7 +105,11 @@ export function Profile(){
           onChange={e => setPasswordNew(e.target.value)}
           />
 
-          <Button title="Salvar" onClick={handleUpdate} />
+          <Button 
+            disabled={loading}
+            title={loading ? "Carregando..." : "Salvar" }
+            onClick={handleUpdate} 
+          />
         </Form>
       </Container>
     );

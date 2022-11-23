@@ -9,12 +9,16 @@ export const Container = styled.div`
 
 export const Form = styled.form`
     padding: 0 3.3rem;
-    /* padding: 0 136px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @media (min-width: 40em) {
+        padding: 0 136px;
+    }
+
     > h1 {
         font-size: 48px;
         color: ${({ theme }) => theme.COLORS.ROSE};
