@@ -85,15 +85,16 @@ export const Profile = styled.div`
   }
 
   > a {
-    width: 6.4rem;
-    height:  6.4rem;
+    width: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
+    height: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
 
     img {
-    width: 100%;
-    height: 100%;
+      width: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
+      height: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
+      object-fit: cover;
 
-    border-radius: 50%;
-    border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_600};
+      border-radius: 50%;
+      border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_600};
     }
   }
 
