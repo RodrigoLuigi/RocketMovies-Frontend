@@ -49,8 +49,10 @@ export const Avatar = styled.div `
     height: 186px;
 
     > img {
-        width: 100%;
-        border-radius: 50%;
+      width: 186px;
+      height: 186px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     > label {
