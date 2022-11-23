@@ -85,8 +85,8 @@ export const Profile = styled.div`
   }
 
   > a {
-    width: clamp(3.2rem, 3.2rem + 5vw , 6.4rem);
-    height: clamp(3.2rem, 3.2rem + 5vw , 6.4rem);
+    width: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
+    height: clamp(4.2rem, 4.2rem + 5vw , 6.4rem);
 
     img {
     width: 100%;
