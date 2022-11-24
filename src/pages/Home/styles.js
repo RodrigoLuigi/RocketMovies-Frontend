@@ -103,7 +103,7 @@ export const NewMovie = styled(Link)`
 
 export const MovieNotes = styled.div`
  
-  max-height: 410px;
+  /* max-height: 410px; */ /* modificado */
   margin-top: 37px;
   
 

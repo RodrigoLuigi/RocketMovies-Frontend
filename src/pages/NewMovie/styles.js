@@ -91,7 +91,7 @@ export const Form = styled.form`
   }
 
   @media (min-width: 900px){
-    max-height: 410px;
+    /* max-height: 410px; */ /* modificado */
 
     gap: 40px;
 

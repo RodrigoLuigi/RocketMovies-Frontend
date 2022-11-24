@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const Form = styled.form`
     padding: 0 3.3rem;
+    margin: 0 auto; /* modificado */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +18,7 @@ export const Form = styled.form`
 
     @media (min-width: 40em) {
         padding: 0 136px;
+        margin: 0; /* modificado */
     }
 
     > h1 {
@@ -42,7 +44,10 @@ export const Form = styled.form`
 `;
 
 export const Background = styled.div`
+
+@media (min-width: 40em) { /* modificado */
     flex: 1;
     background: url(${backgroundImg}) no-repeat center center;
     background-size: cover;
+}
 `;

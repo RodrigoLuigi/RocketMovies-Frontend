@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import { toast } from 'react-toastify'; /* adicionado */
 
 import { api } from '../services/api';
 
@@ -24,10 +25,18 @@ function AuthProvider({ children }) {
 
     } catch (error) {
       if(error.response){
-        alert(error.response.data.message);
+        /* alert(error.response.data.message); */ /* modificado */
+        toast.warn(error.response.data.message, {
+          theme: "colored",
+          style: {color: "#2c2a2abc", fontSize: "18px"},
+        });
         setLoading(false);
       } else {
-        alert("Não foi possível entrar.")
+        /* alert("Não foi possível entrar.") */ /* modificado */
+        toast.error("Não foi possível entrar.", {
+          theme: "colored",
+          style: {color: "#2c2a2abc", fontSize: "18px"},
+        });
         setLoading(false);
       } 
     } finally {
@@ -59,14 +68,26 @@ function AuthProvider({ children }) {
       
 
       setData({user, token: data.token});
-      alert("Perfil atualizado com sucesso!");
+      /* alert("Perfil atualizado com sucesso!"); */ /* modificado */
+      toast.success("Perfil atualizado com sucesso!", {
+        theme: "colored",
+        style: {color: "#2c2a2abc", fontSize: "18px"},
+      });
 
     } catch (error) {
       if(error.response){
-        alert(error.response.data.message);
+        /* alert(error.response.data.message); */ /* modificado */
+        toast.warn(error.response.data.message, {
+          theme: "colored",
+          style: {color: "#2c2a2abc", fontSize: "18px"},
+        });
         setLoading(false);
       } else {
-        alert("Não foi possível atualizar o perfil.");
+        /* alert("Não foi possível atualizar o perfil."); */ /* modificado */
+        toast.error("Não foi possível atualizar o perfil.", {
+          theme: "colored",
+          style: {color: "#2c2a2abc", fontSize: "18px"},
+        });
         setLoading(false);
       }
     } finally {

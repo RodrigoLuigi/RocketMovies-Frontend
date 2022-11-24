@@ -67,7 +67,7 @@ export const MovieNote = styled.div`
   }
 
   @media (min-width: 900px) {
-  max-height: 410px;
+  /* max-height: 410px; */ /* modificado */
   overflow-y: scroll;
 
 
