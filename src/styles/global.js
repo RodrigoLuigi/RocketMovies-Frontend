@@ -11,6 +11,15 @@ export default createGlobalStyle`
 
   :root {
     font-size: 62.5%;
+    
+    --toastify-text-color-warning: #ffd904; 
+    --toastify-color-warning: #2b2a2a;
+
+    --toastify-text-color-success: #07bc0c; 
+    --toastify-color-success: #2b2a2a;
+
+    -toastify-text-color-error : #e74c3c ; 
+    --toastify-color-error: #2b2a2a;
   }
 
   body {

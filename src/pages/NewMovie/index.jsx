@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 
+import { toast } from 'react-toastify';
+
 import { api } from '../../services/api';
 
 import { Input } from '../../components/Input';
@@ -39,15 +41,15 @@ export function NewMovie(){
 
   async function handleNewNote() {
     if(!title) {
-      return alert("Digite o título da nota");
+      return toast.warn("Digite o título da nota", {theme: "colored"});
     }
 
     if(rating == 0) {
-      return alert("Dê uma nota para o Filme.");
+      return toast.warn("Dê uma nota para o Filme.", {theme: "colored"});
     }
 
    if(newTag) {
-    return alert("Você deixou uma tag no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio.");
+    return toast.warn("Você deixou uma tag no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio.", {theme: "colored"});
    }
 
     await api.post("/notes", {
@@ -57,7 +59,7 @@ export function NewMovie(){
       tags
     });
 
-    alert("Nota criada com sucesso!");
+    toast.success("Nota criada com sucesso!", {theme: "colored"});
     navigate(-1);
   }
 
