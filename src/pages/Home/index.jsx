@@ -66,7 +66,7 @@ export function Home(){
               ) : 
               <EmptyNote>
                 <FiFileText size={84}/>
-                <h3>Nenhum filme cadastrado no momento.<br /> Clique em Adicionar filme para cadastrar uma nota.</h3>
+                <h3>Nenhum filme cadastrado no momento.<br /> Clique em Adicionar filme.</h3>
               </EmptyNote>
             }
           </MovieNotes>
