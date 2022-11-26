@@ -5,6 +5,7 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     align-items: stretch;
+    overflow: hidden;
 `;
 
 export const Form = styled.form`
@@ -15,6 +16,8 @@ export const Form = styled.form`
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: toLeft 900ms backwards;
+
 
     @media (min-width: 40em) {
         padding: 0 136px;
@@ -40,8 +43,9 @@ export const Form = styled.form`
 `;
 
 export const Background = styled.div`
+    animation: toRight 900ms backwards;
 
-    @media (min-width: 40em) { /* adicionado */
+    @media (min-width: 900px) { /* adicionado */
         flex: 1;
         background: url(${backgroundImg}) no-repeat center center;
         background-size: cover;

@@ -62,4 +62,26 @@ export default createGlobalStyle`
     justify-content: center;
   }
 
+  @keyframes toRight{
+    0% {
+      opacity: 0;
+      transform: translateX(-150px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translateX(400px);
+  }
+
+  100% {
+    transform: translatex(0);
+  }
+}
+
 `;
