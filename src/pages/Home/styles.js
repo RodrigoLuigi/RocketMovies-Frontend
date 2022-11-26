@@ -133,3 +133,16 @@ export const MovieNotes = styled.div`
 export const Search = styled.div`
   width: 100%;
 `;
+
+export const EmptyNote = styled.div`
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  border: 1px dashed ${({theme}) => theme.COLORS.ROSE};
+  background-color: ${({theme}) => theme.COLORS.ROSE_900};
+  padding: 22px;
+  border-radius: 8px;
+`;

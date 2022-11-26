@@ -48,9 +48,13 @@ export function NewMovie(){
       return toast.warn("Dê uma nota para o Filme.", {theme: "colored"});
     }
 
-   if(newTag) {
+    if(!tags[0]) {
+    return toast.warn("Adicione uma tag no campo de marcadores.", {theme: "colored"});
+    }
+
+    if(newTag) {
     return toast.warn("Você deixou uma tag no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio.", {theme: "colored"});
-   }
+    }
 
     await api.post("/notes", {
       title,

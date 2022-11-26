@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiPlus, FiSearch } from 'react-icons/fi';
+import { FiPlus, FiSearch, FiFileText } from 'react-icons/fi';
 
 import { api } from '../../services/api';
 
@@ -8,7 +8,7 @@ import { Header } from '../../components/Header';
 import { Movie } from '../../components/Movie';
 import { Input } from '../../components/Input';
 
-import { Container, Content,MovieNotes, NewMovie, Search } from './styles';
+import { Container, Content,MovieNotes, NewMovie, Search, EmptyNote } from './styles';
 
 export function Home(){
   const [search, setSearch] = useState("");
@@ -53,17 +53,23 @@ export function Home(){
           </NewMovie>
         </header>
         
-        <MovieNotes>
-          {
-           notes.map(note => (
-            <Movie 
-            key={String(note.id)}
-            data={note}
-            onClick={() => handleDetails(note.id)}
-            />
-          ))
-          }
-        </MovieNotes>
+          <MovieNotes>
+            { notes.length > 0 ? 
+              ( 
+                notes.map(note => (
+                  <Movie 
+                  key={String(note.id)}
+                  data={note}
+                  onClick={() => handleDetails(note.id)}
+                  />
+                ))
+              ) : 
+              <EmptyNote>
+                <FiFileText size={84}/>
+                <h3>Nenhum filme cadastrado no momento.<br /> Clique em Adicionar filme para cadastrar uma nota.</h3>
+              </EmptyNote>
+            }
+          </MovieNotes>
       </Content>
     </main>
 
