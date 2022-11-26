@@ -20,7 +20,6 @@ export const Form = styled.form`
 
     @media (min-width: 40em) {
         padding: 0 136px;
-        margin: 0; /* modificado */
     }
 
     > h1 {
