@@ -1,6 +1,9 @@
 import { FiArrowLeft, FiClock, FiTrash2} from 'react-icons/fi';
 import { useParams, useNavigate } from 'react-router-dom';
 
+import { confirmAlert } from 'react-confirm-alert'
+import { toast } from 'react-toastify';
+
 import { api } from '../../services/api';
 import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
 
@@ -27,14 +30,28 @@ export function Details(){
     navigate(-1)
   }
 
-  async function handleRemoveNote(){
-    const confirm = window.confirm("Deseja realmente remover a nota do filme?");
+  function handleRemoveNote(){
+    confirmAlert({
+      message: 'Deseja realmente remover a nota do filme?',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: async () => {
+            await api.delete(`/notes/${params.id}`)
+            navigate(-1);
 
-    if(confirm) {
-      await api.delete(`/notes/${params.id}`)
-      navigate(-1);
-    } 
-  }
+            toast.success('Nota excluída com sucesso!', {
+              theme: "colored"
+            })
+          }
+        },
+        {
+          label: 'No',
+          onClick: () => {}
+        }
+      ]
+    });
+  } 
 
   useEffect(() => {
     async function fatchNote(){

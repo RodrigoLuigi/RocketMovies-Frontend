@@ -1,4 +1,5 @@
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
 import { createGlobalStyle } from 'styled-components';
 
@@ -18,7 +19,7 @@ export default createGlobalStyle`
     --toastify-text-color-success: #07bc0c; 
     --toastify-color-success: #2b2a2a;
 
-    -toastify-text-color-error : #e74c3c ; 
+    --toastify-text-color-error : #e74c3c ; 
     --toastify-color-error: #2b2a2a;
   }
 
@@ -47,4 +48,18 @@ export default createGlobalStyle`
   button:hover, a:hover {
     filter: brightness(0.9);
   }
+
+  .react-confirm-alert-overlay {
+    background-color: rgba(0,0,0, 0.8);
+  }
+
+  .react-confirm-alert-body {
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  }
+
+  .react-confirm-alert-button-group {
+    justify-content: center;
+  }
+
 `;
