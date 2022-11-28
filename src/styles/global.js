@@ -76,10 +76,12 @@ export default createGlobalStyle`
 
 @keyframes toLeft {
   0% {
-    transform: translateX(400px);
+    opacity: 0;
+    transform: translateX(150px);
   }
 
   100% {
+    opacity: 1;
     transform: translatex(0);
   }
 }

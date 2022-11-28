@@ -35,7 +35,7 @@ export function Details(){
       message: 'Deseja realmente remover a nota do filme?',
       buttons: [
         {
-          label: 'Yes',
+          label: 'Sim',
           onClick: async () => {
             await api.delete(`/notes/${params.id}`)
             navigate(-1);
@@ -46,7 +46,7 @@ export function Details(){
           }
         },
         {
-          label: 'No',
+          label: 'Não',
           onClick: () => {}
         }
       ]
