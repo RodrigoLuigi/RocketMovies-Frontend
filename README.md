@@ -51,5 +51,4 @@
 
 <img src="./public/assets/profile.png" width="275px" height="200px">
 
-<img src="./public/assets/movie-preview.png" width="275px" height="200px">
 </div>
