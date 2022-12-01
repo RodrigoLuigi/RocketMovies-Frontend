@@ -31,7 +31,8 @@
 :heavy_check_mark: Perfil do usuário\
 :heavy_check_mark: Cadastro de Notas\
 :heavy_check_mark: Pesquisar por Notas\
-:heavy_check_mark: Listar Notas
+:heavy_check_mark: Listar Notas\
+:heavy_check_mark: Detalhes da Nota
 ## :books: Bibliotecas ##
 
 _**As seguintes bibliotecas foram utilizadas neste projeto:**_
