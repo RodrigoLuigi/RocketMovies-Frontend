@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="#sobre">Sobre</a> &#xa0; | &#xa0; 
-  <a href="#-features">Features</a> &#xa0; | &#xa0;
-  <a href="#-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#gear-features">Features</a> &#xa0; | &#xa0;
+  <a href="#books-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#-requisitos">Requisitos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-iniciando">Iniciando</a> &#xa0; | &#xa0;
   <a href="https://github.com/RodrigoLuigi" target="_blank">Author</a>
@@ -32,7 +32,7 @@
 :heavy_check_mark: Cadastro de Notas\
 :heavy_check_mark: Pesquisar por Notas\
 :heavy_check_mark: Listar Notas
-## 📚️ Bibliotecas ##
+## :books: Bibliotecas ##
 
 _**As seguintes bibliotecas foram utilizadas neste projeto:**_
 
