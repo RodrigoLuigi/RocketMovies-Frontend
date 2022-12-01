@@ -40,7 +40,7 @@
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; width: 100%; gap: 2px;">
+<div style="display: flex; justify-content: center; flex-wrap: wrap; width: 100%; gap: 2px;">
 <img src="./public/assets/signin.png" width="290px" height="200px">
 
 <img src="./public/assets/home.png" width="290px" height="200px">
