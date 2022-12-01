@@ -40,7 +40,7 @@
 
 ## Screenshots
 
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+<div style="display: flex; justify-content: center;">
 <img src="./public/assets/signin.png" width="275px" height="200px">
 <img src="./public/assets/home.png" width="275px" height="200px">
 <img src="./public/assets/create-movie.png" width="275px" height="200px">
