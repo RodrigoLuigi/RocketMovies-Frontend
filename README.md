@@ -24,7 +24,7 @@
 ## <img id="sobre" src="https://imgur.com/VhTBbHg.png" alt="imagem de um notebook" align="center" width="30px"> _**O que desenvolvemos neste Projeto?**_
 
 📌 RocketMovies é uma Aplicação para gerenciar anotações sobre filmes e séries. O usuário poderá cadastrar notas, atribuir ranking para cada filme com tags vinculados a nota. O usuário poderá fazer buscas de notas cadastradas, bem como lista-las. Cada usuário terá seu próprio perfil e também poderá atualiza-lo. 
-## ⚙️ Features ##
+## :gear: Features ##
 
 :heavy_check_mark:  Cadastro de usuário\
 :heavy_check_mark: Login\
