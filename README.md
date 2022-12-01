@@ -40,14 +40,16 @@
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; width: 600px; gap: 5px">
-<img src="./public/assets/signin.png" width="290px" heigth="10px">
+<div style="display: flex; flex-wrap: wrap; width: 100%; gap: 5px">
+<img src="./public/assets/signin.png" width="290px">
+
+<img src="./public/assets/home.png" width="290px">
+
+<img src="./public/assets/create-movie.png" width="290px">
 
 <img src="./public/assets/signup.png" width="290px">
 
 <img src="./public/assets/profile.png" width="290px">
 
-<img src="./public/assets/profile.png" width="290px">
-
-<img src="./public/assets/profile.png" width="290px">
+<img src="./public/assets/movie -preview.png" width="290px">
 </div>
