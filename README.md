@@ -41,14 +41,15 @@
 ## Screenshots
 
 <div>
-<img src="./public/assets/signin.png" width="275px" height="200px">
+<img src="./public/assets/signin.png" width="270px" height="200px">
 
-<img src="./public/assets/home.png" width="275px" height="200px">
+<img src="./public/assets/home.png" width="270px" height="200px">
 
-<img src="./public/assets/create-movie.png" width="275px" height="200px">
+<img src="./public/assets/create-movie.png" width="270px" height="200px">
 
-<img src="./public/assets/signup.png" width="275px" height="200px">
+<img src="./public/assets/signup.png" width="270px" height="200px">
 
 <img src="./public/assets/profile.png" width="275px" height="200px">
 
+<img src="./public/assets/movie-preview.png" width="270px" height="200px">
 </div>
