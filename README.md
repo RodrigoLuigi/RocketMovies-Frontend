@@ -40,11 +40,16 @@
 
 ## Screenshots
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px">
-<img src="./public/assets/signin.png" height="150px">
-<img src="./public/assets/home.png" height="150px">
-<img src="./public/assets/create-movie.png" height="150px">
-<img src="./public/assets/signup.png" height="150px">
-<img src="./public/assets/profile.png" height="150px">
-<img src="./public/assets/movie -preview.png" height="150px">
+<div style="display: flex; flex-wrap: wrap; width: 100%; gap: 5px;">
+<img src="./public/assets/signin.png" width="290px">
+
+<img src="./public/assets/home.png" width="290px">
+
+<img src="./public/assets/create-movie.png" width="290px">
+
+<img src="./public/assets/signup.png" width="290px">
+
+<img src="./public/assets/profile.png" width="290px">
+
+<img src="./public/assets/movie-preview.png" width="290px">
 </div>
