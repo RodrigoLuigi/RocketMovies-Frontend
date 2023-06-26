@@ -1,6 +1,5 @@
-import axios from "axios";
+import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: "https://rsmovies-api.herokuapp.com"
-});
-
+	baseURL: 'https://rocketmovies-api-1h9u.onrender.com'
+})
